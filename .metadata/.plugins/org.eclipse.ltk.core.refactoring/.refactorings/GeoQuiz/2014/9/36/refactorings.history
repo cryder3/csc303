@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Encapsulate field &apos;edu.elon.cs.mobile.geoquiz.TrueFalse.mQuestion&apos; in &apos;edu.elon.cs.mobile.geoquiz.TrueFalse&apos;&#x0D;&#x0A;- Original project: &apos;GeoQuiz&apos;&#x0D;&#x0A;- Original element: &apos;edu.elon.cs.mobile.geoquiz.TrueFalse.mQuestion&apos;&#x0D;&#x0A;- Getter method name: &apos;getmQuestion&apos;&#x0D;&#x0A;- Setter method name: &apos;setmQuestion&apos;&#x0D;&#x0A;- Field visibility: &apos;private&apos;&#x0D;&#x0A;- Use getter and setter methods in declaring type" comments="false" declaring="true" description="Encapsulate field &apos;mQuestion&apos;" flags="589830" getter="getmQuestion" id="org.eclipse.jdt.ui.self.encapsulate" input="/src&lt;edu.elon.cs.mobile.geoquiz{TrueFalse.java[TrueFalse^mQuestion" insertion="0" setter="setmQuestion" stamp="1409670161994" version="1.0" visibility="2"/>
+</session>

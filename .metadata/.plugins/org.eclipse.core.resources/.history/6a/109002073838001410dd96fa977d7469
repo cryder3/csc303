@@ -1,0 +1,14 @@
+package edu.elon.cs.mobile.compass;
+
+import android.content.Context;
+import android.util.AttributeSet;
+import android.widget.ImageView;
+
+public class Compass extends ImageView {
+
+	public Compass(Context context, AttributeSet attrs) {
+		super(context, attrs);
+		
+	}
+
+}

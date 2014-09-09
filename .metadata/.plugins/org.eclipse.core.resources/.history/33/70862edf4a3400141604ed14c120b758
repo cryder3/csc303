@@ -1,0 +1,32 @@
+package edu.elon.cs.mobile.geoquiz;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
+import android.widget.Toast;
+
+public class CheatActivity extends Activity {
+	
+	private Button mShowButton;
+	private TextView mAnswerText;
+	@Override
+	 protected void onCreate(Bundle savedInstanceState) {
+	        super.onCreate(savedInstanceState);
+	        setContentView(R.layout.activity_cheat);
+	        mAnswerText = (TextView)findViewById(R.id.answer);
+	        mShowButton = (Button)findViewById(R.id.show_button);
+	        mShowButton.setOnClickListener(new View.OnClickListener() {
+				
+				@Override
+				public void onClick(View v) {
+					// TODO On click stuff
+					
+				}
+			});
+	 }
+
+}

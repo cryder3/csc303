@@ -1,0 +1,5 @@
+package edu.elon.cs.mobile.compass;
+
+public class Compass {
+
+}
