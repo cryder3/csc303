@@ -1,0 +1,5 @@
+package edu.elon.cs.mobile.doodle;
+
+public class DoodleView {
+
+}

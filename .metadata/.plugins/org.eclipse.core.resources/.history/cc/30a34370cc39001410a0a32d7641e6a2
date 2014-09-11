@@ -1,0 +1,7 @@
+package edu.elon.cs.mobile.doodle;
+
+import android.view.View;
+
+public class DoodleView extends View {
+
+}

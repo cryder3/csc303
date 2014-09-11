@@ -6,7 +6,6 @@ INDEX VERSION 1.127+\\cs.elon.edu\clees\csc303\.metadata\.plugins\org.eclipse.jd
 2151188178.index
 2380175872.index
 714281717.index
-783925646.index
 3871394155.index
 421278752.index
 442459137.index
