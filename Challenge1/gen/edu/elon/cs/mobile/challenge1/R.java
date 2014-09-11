@@ -1085,7 +1085,6 @@ containing a value of this type.
         public static final int action_mode_close_button=0x7f050024;
         public static final int activity_chooser_view_content=0x7f050025;
         public static final int always=0x7f05000b;
-        public static final int answer=0x7f050043;
         public static final int beginning=0x7f050011;
         public static final int button1=0x7f05003f;
         public static final int button2=0x7f050040;

@@ -21,14 +21,17 @@ public class MainActivity extends Activity implements SensorEventListener {
 	private float[] iMatrix = new float[9];
 	private float[] actualOrientation = new float[3];
 	
-	private Compass compass;
+	private float oldCurrentOrientation = 0.0f;
+	private final float FILTER = 0.8f;
+	
+	private CompassView compass;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		
 		mSensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
-		compass = (Compass) findViewById(R.id.compass);
+		compass = (CompassView) findViewById(R.id.compassview);
 		
 	}
 	
@@ -62,8 +65,9 @@ public class MainActivity extends Activity implements SensorEventListener {
 		if(magneticFieldValues != null && gravityValues != null){
 			if(SensorManager.getRotationMatrix(rMatrix, iMatrix, gravityValues, magneticFieldValues)){
 				SensorManager.getOrientation(rMatrix, actualOrientation);
-				
 				float currentOrientation = (float) -Math.toDegrees(actualOrientation[0]);
+				currentOrientation = currentOrientation*(1-FILTER) + oldCurrentOrientation * FILTER;
+				oldCurrentOrientation = currentOrientation; 
 				compass.setAzimuth(currentOrientation);
 				compass.invalidate();
 			}

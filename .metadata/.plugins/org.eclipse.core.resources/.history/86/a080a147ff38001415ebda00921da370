@@ -1,0 +1,114 @@
+package edu.elon.cs.mobile.challenge1;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import android.app.Activity;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
+import android.widget.Toast;
+
+public class TopsecretActivity extends Activity {
+
+	private Button mOneButton;
+	private Button mTwoButton;
+	private Button mThreeButton;
+	private Button mFourButton;
+	private TextView mEnteredTextView;
+	private String mPassword;
+	private TextView answer;
+	
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_topsecret);
+        mEnteredTextView = (TextView)findViewById(R.id.entered_text);
+        mEnteredTextView.setText("");
+        mPassword = createPassword();
+        answer = (TextView)findViewById(R.id.answer);
+        answer.setText(mPassword);
+        mOneButton = (Button)findViewById(R.id.button1);
+        mOneButton.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				mEnteredTextView.setText(mEnteredTextView.getText()+"1");
+				if(isFourLength()){
+					checkAnswer(mEnteredTextView.getText()+ "");
+				}
+			}
+		});
+        
+        mTwoButton = (Button)findViewById(R.id.button2);
+        mTwoButton.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				mEnteredTextView.setText(mEnteredTextView.getText()+"2");
+				if(isFourLength()){
+					checkAnswer(mEnteredTextView.getText()+ "");
+				}
+			}
+		});
+        mThreeButton = (Button)findViewById(R.id.button3);
+        mThreeButton.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				mEnteredTextView.setText(mEnteredTextView.getText()+"3");
+				if(isFourLength()){
+					checkAnswer(mEnteredTextView.getText()+ "");
+				}
+			}
+		});
+        mFourButton = (Button)findViewById(R.id.button4);
+        mFourButton.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				mEnteredTextView.setText(mEnteredTextView.getText()+"4");
+				if(isFourLength()){
+					checkAnswer(mEnteredTextView.getText()+ "");
+				}
+			}
+		});
+        
+    }
+    
+    private String createPassword(){
+    	ArrayList<String> nums = new ArrayList<String>();
+    	nums.add("1");
+    	nums.add("2");
+    	nums.add("3");
+    	nums.add("4");
+    	Collections.shuffle(nums);
+    	String password = "";
+    	for(String s : nums){
+    		password += s;
+    	}
+    	return password;
+    }
+    
+    private boolean isFourLength(){
+    	if(mEnteredTextView.getText().length() == 4){
+    		return true;
+    	}
+    	return false;
+    }
+    
+    private void checkAnswer(String password){
+    	if(mPassword.equals(password)){
+    		Intent i = new Intent(TopsecretActivity.this, PasswordActivity.class);
+    		i.putExtra(PasswordActivity.PASSWORD, password);
+    		startActivity(i);
+    	}
+    	else{
+    		Toast.makeText(TopsecretActivity.this, R.string.incorrect_toast, Toast.LENGTH_SHORT).show();
+    		mPassword = createPassword();
+    		mEnteredTextView.setText("");
+    		answer.setText(mPassword);
+    	}
+    }
+}

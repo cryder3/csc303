@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;edu.elon.cs.mobile.compass.Compass.java&apos; to &apos;CompassView.java&apos;&#x0D;&#x0A;- Original project: &apos;Compass&apos;&#x0D;&#x0A;- Original element: &apos;edu.elon.cs.mobile.compass.Compass.java&apos;&#x0D;&#x0A;- Renamed element: &apos;edu.elon.cs.mobile.compass.CompassView.java&apos;" description="Rename compilation unit &apos;Compass.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;edu.elon.cs.mobile.compass{Compass.java" name="CompassView.java" references="false" stamp="1410447592172" version="1.0"/>
+</session>

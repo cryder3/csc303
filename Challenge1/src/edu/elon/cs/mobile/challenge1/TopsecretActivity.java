@@ -25,10 +25,6 @@ public class TopsecretActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_topsecret);
         mEnteredTextView = (TextView)findViewById(R.id.entered_text);
-        mEnteredTextView.setText("");
-        mPassword = createPassword();
-        answer = (TextView)findViewById(R.id.answer);
-        answer.setText(mPassword);
         mOneButton = (Button)findViewById(R.id.button1);
         mOneButton.setOnClickListener(new View.OnClickListener() {
 			
@@ -108,7 +104,12 @@ public class TopsecretActivity extends Activity {
     		Toast.makeText(TopsecretActivity.this, R.string.incorrect_toast, Toast.LENGTH_SHORT).show();
     		mPassword = createPassword();
     		mEnteredTextView.setText("");
-    		answer.setText(mPassword);
     	}
+    }
+    
+    protected void onResume(){
+    	super.onResume();
+    	mPassword = createPassword();
+		mEnteredTextView.setText("");
     }
 }
