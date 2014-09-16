@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="${relativePackage}.${activityClass}">
+    <item 
+        android:id="@+id/action_width"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:onClick="showWidthDialog"
+        android:title="@string/action_width" />
+
+</menu>
