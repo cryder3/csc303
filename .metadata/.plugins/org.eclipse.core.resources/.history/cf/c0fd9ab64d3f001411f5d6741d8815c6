@@ -1,0 +1,7 @@
+package edu.elon.cs.mobile.flying;
+
+import android.view.View;
+
+public class SkyView extends View {
+
+}

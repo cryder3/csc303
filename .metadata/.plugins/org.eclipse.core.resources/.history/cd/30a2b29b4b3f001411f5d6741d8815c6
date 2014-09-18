@@ -1,0 +1,5 @@
+package edu.elon.cs.mobile.flying;
+
+public class Bird {
+
+}
