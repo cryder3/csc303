@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Doodle</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_width">Set Width</string>
+    <string name="save_width">Save Width</string>
+    <string name="choose_width">Choose a width"</string>
+
+</resources>

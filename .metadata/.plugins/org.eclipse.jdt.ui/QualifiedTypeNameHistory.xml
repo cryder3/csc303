@@ -17,9 +17,7 @@
 <fullyQualifiedTypeName name="android.graphics.drawable.Drawable"/>
 <fullyQualifiedTypeName name="edu.elon.cs.mobile.compass.R.id"/>
 <fullyQualifiedTypeName name="android.view.View"/>
-<fullyQualifiedTypeName name="android.content.Context"/>
 <fullyQualifiedTypeName name="android.util.AttributeSet"/>
-<fullyQualifiedTypeName name="android.view.MotionEvent"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="android.app.Dialog"/>
 <fullyQualifiedTypeName name="edu.elon.cs.mobile.doodle.R.layout"/>
@@ -27,10 +25,17 @@
 <fullyQualifiedTypeName name="android.widget.SeekBar.OnSeekBarChangeListener"/>
 <fullyQualifiedTypeName name="android.widget.Button"/>
 <fullyQualifiedTypeName name="android.graphics.Paint"/>
-<fullyQualifiedTypeName name="android.graphics.Color"/>
 <fullyQualifiedTypeName name="android.widget.ImageView"/>
-<fullyQualifiedTypeName name="android.graphics.Bitmap"/>
 <fullyQualifiedTypeName name="android.graphics.Bitmap.Config"/>
-<fullyQualifiedTypeName name="android.graphics.Canvas"/>
 <fullyQualifiedTypeName name="edu.elon.cs.mobile.doodle.R.id"/>
+<fullyQualifiedTypeName name="android.view.SurfaceView"/>
+<fullyQualifiedTypeName name="android.view.SurfaceHolder"/>
+<fullyQualifiedTypeName name="android.graphics.Bitmap"/>
+<fullyQualifiedTypeName name="android.content.Context"/>
+<fullyQualifiedTypeName name="android.graphics.BitmapFactory"/>
+<fullyQualifiedTypeName name="edu.elon.cs.mobile.flying.R.drawable"/>
+<fullyQualifiedTypeName name="android.graphics.Rect"/>
+<fullyQualifiedTypeName name="android.graphics.Canvas"/>
+<fullyQualifiedTypeName name="android.graphics.Color"/>
+<fullyQualifiedTypeName name="android.view.MotionEvent"/>
 </qualifiedTypeNameHistroy>
