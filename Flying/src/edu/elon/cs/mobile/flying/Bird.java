@@ -11,7 +11,7 @@ public class Bird {
 	private float width, height;
 	private Bitmap bitmap;
 	
-	private final float SCALE = 0.75f;
+	private final float SCALE = .25f;
 	public Bird(Context context){
 		bitmap = BitmapFactory.decodeResource(context.getResources(), R.drawable.bird);
 		width = bitmap.getWidth()* SCALE;
